@@ -8,5 +8,9 @@
 */
 void rand_fill_table(int *tab, int size)
 {
-    // fill up your table here with randome elements between 10 and 100
+    srand(time(0));
+    for(int i=0;i<size;i++){
+        tab[i]=rand();
+    }
+    return ;
 }
